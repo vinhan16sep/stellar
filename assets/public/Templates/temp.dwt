@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Stellar Garden</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Maitree:600" rel="stylesheet">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+<script src="script.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="container center-block clearfix">
+	<div class="container_head">
+    	<div class="left">
+        	<a href="home.html" id="logo"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="right">
+        	<div class="language">
+            	<ul>
+                	<li><a href="">Tiếng Việt</a></li>
+                    <li>|</li>
+                    <li><a href="">English</a></li>
+                </ul>
+            </div>
+            <div class="register">
+            	<button class="btn btn-default hvr-shutter-out-horizontal" type="submit" data-toggle="modal" data-target="#register">Đăng ký căn hộ</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container_body">
+    	<div class="nav">
+        	<ul>
+            <!-- TemplateBeginEditable name="nav" -->
+            	<li class="nav_li"><a href="index.html">Trang chủ</a></li>
+                <li class="nav_li"><a href="overview.html">Tổng quan dự án</a></li>
+                <li class="nav_li"><a href="location.html">Vị trí</a></li>
+                <li class="nav_li">
+                	<a href="#" class="disabled">Sản phẩm</a>
+                    <ul>
+                    	<li><a href="pro-resident.html">Tháp chung cư</a></li>
+                        <li><a href="pro-office.html">Tháp văn phòng</a></li>
+                        <li><a href="pro-mall.html">Trung tâm thương mại</a></li>
+                    </ul>
+                </li>
+                <li class="nav_li"><a href="Utilities.html">Tiện ích</a></li>
+                <li class="nav_li"><a href="progress.html">Cập nhật dự án</a></li>
+                <li class="nav_li">
+                	<a href="#" class="disabled">Chủ đầu tư & Đối tác</a>
+                    <ul>
+                    	<li><a href="investers.html">Chủ đầu tư</a></li>
+                        <li><a href="partners.html">Đối tác</a></li>
+                    </ul>
+                </li>
+                <li class="nav_li"><a href="faq.html">Hỏi & Đáp</a></li>
+                <li class="nav_li"><a href="download.html">Tải về</a></li>
+            <!-- TemplateEndEditable -->
+            </ul>
+        </div>
+    	<div class="container-fluid">
+        <!-- TemplateBeginEditable name="content" -->
+        
+        
+		<!-- TemplateEndEditable -->
+        </div>
+    </div>
+    <div class="container_foot">
+    	<div class="left">
+        	<h4>Hotline : <span class="tel">(84-4) 668.00.886</span></h4>
+            <h5>Văn phòng bán hàng và địa chỉ dự án:
+            	<br>
+                Số 35 Lê Văn Thiêm, Thanh Xuân, Hà Nội</h5>
+        </div>
+        <div class="right">
+        	<p>Bản quyền thuộc về: Công ty KD và XD Quang Minh</p>
+            <p>Phát triển bởi Mato Creative</p>
+        </div>
+        
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="registerLabel">Thông tin đăng ký</h4>
+      </div>
+      <div class="modal-body">
+      	<table>
+        	<tr>
+            	<th colspan="3"><h4 class="title">THÔNG TIN KHÁCH HÀNG</h4></th>
+            </tr>
+            <tr>
+            	<th>Họ và Tên</th>
+                <th>&nbsp;</th>
+                <th><input type="text" class="form-control" id="InputName" placeholder="Họ&Tên"></th>
+            </tr>
+            <tr>
+            	<th>Nơi công tác</th>
+                <th>&nbsp;</th>
+                <th><input type="text" class="form-control" id="InputWorkplace" placeholder="Nơi công tác"></th>
+            </tr>
+            <tr>
+            	<th>Chức vụ</th>
+                <th>&nbsp;</th>
+                <th><input type="text" class="form-control" id="InputGrade" placeholder="Chức vụ"></th>
+            </tr>
+            <tr>
+            	<th>Địa chỉ liên hệ</th>
+                <th>&nbsp;</th>
+                <th><input type="text" class="form-control" id="InputAddress" placeholder="Địa chỉ"></th>
+            </tr>
+            <tr>
+            	<th>Điện thoại liên hệ</th>
+                <th>&nbsp;</th>
+                <th><input type="number" class="form-control" id="InputTel" placeholder="Điện thoại"></th>
+            </tr>
+            <tr>
+            	<th>Email</th>
+                <th>&nbsp;</th>
+                <th><input type="text" class="form-control" id="InputMail" placeholder="Email"></th>
+            </tr>
+            <tr>
+            	<th>Fax</th>
+                <th>&nbsp;</th>
+                <th><input type="number" class="form-control" id="InputFax" placeholder="Fax"></th>
+            </tr>
+        </table>
+        <table>
+        	<tr>
+            	<th colspan="5"><h4 class="title">THÔNG TIN KHÁCH HÀNG QUAN TÂM</h4></th>
+            </tr>
+            <tr>
+            	<th>Diện tích</th>
+                <th>&nbsp;</th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="select_a" value="option1">
+                      112,4m2 <br> (3 phòng ngủ) 
+                    </label>
+                </th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="select_b" value="option2">
+                      91,7m2 <br> (2 phòng ngủ)
+                    </label>
+                </th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="select_c" value="option3">
+                      53,2m2 <br> (2 phòng ngủ)
+                    </label>
+                </th>
+            </tr>
+		</table>
+        <table>	            
+            <tr>
+            	<th colspan="4"><h4 class="title">QUÝ KHÁCH BIẾT TỚI DỰ ÁN Stellar Garden THÔNG QUA:</h4></th>
+            </tr>
+            <tr>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="ads_1" value="option1">
+                      Quảng cáo trên báo chí
+                    </label>
+                </th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="ads_2" value="option2">
+                      Biển quảng cáo ngoài trời
+                    </label>
+                </th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="ads_3" value="option3">
+                      Quảng cáo trên Tivi
+                    </label>
+                </th>
+                <th>
+                	<label class="checkbox-inline">
+                      <input type="checkbox" id="ads_4" value="option4">
+                      Quảng cáo trên mạng
+                    </label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                	Câu hỏi thêm:
+                </th>
+                <th colspan="3">
+                	<textarea class="form-control"></textarea>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" id="bank_check" value="ban_check">
+                      Tôi quan tâm tới dịch vụ cho vay của ngân hàng
+                    </label>
+                </th>
+        	</tr>        
+      	</table>      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default hvr-shutter-out-horizontal" id="send">Gửi thông tin</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
