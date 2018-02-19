@@ -154,6 +154,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="<?php echo site_url('assets/public/bootstrap-3.3.4-dist/js/bootstrap.js'); ?>"></script>
+<script src="<?php echo site_url('assets/public/responsive_nav.js'); ?>"></script>
 <script src="<?php echo site_url('assets/public/script.js'); ?>"></script>
 <script>
     $('.pocess-title').click(function() {

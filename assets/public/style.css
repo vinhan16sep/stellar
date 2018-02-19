@@ -70,21 +70,30 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	margin-left:20px;
 }
 
-.right ul{
+.container_head .right ul{
 	list-style:none;
 }
 
-.right ul li{
+.container_head .right ul li{
 	display:inline;
 	padding:0 5px;
 }
 
-.right ul li a{
+.container_head .right ul li a{
 	color:#fff;
 }
 
-.right button{
+.container_head .right button{
 	text-transform:uppercase;
+}
+
+/* HEADER WITH RESPONSIVE */
+
+@media (max-width: 970px) {
+	.container_head .left,
+	.container_head .right{
+		text-align: center;
+	}
 }
 
 .container_body{
@@ -92,12 +101,73 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	height:450px;
 }
 
-ul.nav{
-    box-shadow: 0px 0px 10px #333;
+/*
+==== CSS FOR RESPONSIVE MENU ====
+ */
+
+.main_nav button {
+	display: block;
+	width: 100%;
+	min-height: 20px;
+	padding: 7px 15px;
+
+	text-align: center;
+}
+
+.main_nav button,
+.main_nav button:focus{
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
 }
 
 ul.nav > li{
+	display: inline-block;
 	position:relative;
+}
+
+ul.nav > li > a{
+	padding: 10px 7px;
+}
+
+ul.nav > li > ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+
+ul.nav > li:hover > ul{
+	display: block;
+}
+
+ul.nav > li > ul > li{
+
+}
+
+@media (max-width: 970px) {
+	ul.nav{
+
+	}
+
+	ul.nav > li{
+		display: block;
+	}
+
+	ul.nav > li > ul{
+		position: static;
+		display: list-item;
+		padding-left: 15px;
+	}
+}
+
+/*
+==== END OF RESPONSIVE MENU ====
+ */
+
+ul.nav{
+    box-shadow: 0px 0px 10px #333;
 }
 
 ul.nav > li > a{
@@ -116,28 +186,6 @@ ul.nav > li > ul{
 	width: 100%;
 	padding: 10px 15px;
 	background:#493f26;
-	position:absolute;
-	top:100%;
-	left:10px;
-	z-index:999;
-	display:none;
-	opacity: 0;
-	
-	transition:all ease 0.2s;
-	-webkit-transition:all ease 0.2s;
-	-moz-transition:all ease 0.2s;
-	-o-transition:all ease 0.2s;
-}
-
-ul.nav > li:hover ul{
-	display:block;
-	left:0;
-	opacity: 1;
-	
-	transition:all ease 0.2s;
-	-webkit-transition:all ease 0.2s;
-	-moz-transition:all ease 0.2s;
-	-o-transition:all ease 0.2s;
 }
 
 ul.nav > li > ul > li{
@@ -156,6 +204,10 @@ ul.nav > li > ul > li > a{
 	text-transform:none;
 }
 
+ul.nav .sub_nav > ul{
+	background-color: #eaeaea;
+}
+
 .mask{
 	width: 100%;
 	height: 100%;
@@ -170,6 +222,11 @@ ul.nav > li > ul > li > a{
 
 .container_body .container-fluid{
 	height: 100%;
+}
+
+.container_body .content_right{
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*
@@ -194,6 +251,17 @@ ul.nav > li > ul > li > a{
 
 	background:rgba(0,0,0,.6);
 	padding:15px;
+}
+
+@media (max-width: 970px){
+	.homepage_intro{
+		top:55px;
+		left: 50%;
+		margin-left: -40%;
+
+		width: 80%;
+		height: auto;
+	}
 }
 
 
@@ -233,6 +301,20 @@ ul.nav > li > ul > li > a{
 .content_left, .content_right{
 	height:100%;
 	background-color: #1f1a14;
+}
+
+@media (max-width: 768px){
+	.content_right{
+		height: fit-content;
+	}
+
+	/*.container_body .container-fluid{*/
+		/*display: flex;*/
+		/*flex-direction: column;*/
+	/*}*/
+
+	/*.container_body .container-fluid .content_left{ order: 2;}*/
+	/*.container_body .container-fluid .content_right{ order: 1;}*/
 }
 
 .content_left{
@@ -316,7 +398,7 @@ ul.nav > li > ul > li > a{
 }
 
 .slide{
-	height:451px;
+	height:fit-content;
 	overflow:hidden;
 }
 

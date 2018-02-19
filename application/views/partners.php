@@ -1,6 +1,7 @@
-<div class="container-fluid">
+<div class="container_body">
+    <div class="container-fluid">
     <!-- InstanceBeginEditable name="content" -->
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 content_left partners">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 content_left partners">
         <h4 class="title"><?php echo $this->lang->line('partners_title'); ?></h4>
         <div class="text fadeinUp">
           <table>
@@ -64,13 +65,11 @@
             </table>
       </div>
     </div>
-    <div class="content_right col-lg-8 col-md-8 col-sm-8 col-xs-8 pa_bg">
+    <div class="content_right col-md-8 col-sm-8 col-xs-12">
+        <div class="mask">
+            <img src="<?php echo site_url('assets/public/img/nc_001.jpg')?>"
+        </div>
     </div>
 <!-- InstanceEndEditable -->
     </div>
 </div>
-<style>
-.container_body{
-  height:490px; 
-}
-</style>

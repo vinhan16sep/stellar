@@ -1,6 +1,7 @@
-<div class="container-fluid">
+<div class="container_body">
+    <div class="container-fluid">
     <!-- InstanceBeginEditable name="content" -->
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 content_left progress_part">
+    <div class="col-md-4 col-sm-4 col-xs-12 content_left progress_part">
         <div class="text process-content">
             <?php
             if($Process) {
@@ -28,7 +29,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 reset_padding">
+    <div class="col-md-8 col-sm-8 col-xs-12 content_right">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -73,8 +74,3 @@
     </div>
     </div>
 </div>
-<style>
-.container_body{
-  height:490px; 
-}
-</style>
