@@ -1,13 +1,9 @@
 body{
 	background: #362825;
 	font-family:"webFont";
-	
-	
 }
 
 html, body{
-	margin:0;
-	position:relative;
 	height:100%;
 }
 
@@ -25,23 +21,40 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	font-family:"webFontB";
 }
 
+/* Let's get this party started */
+::-webkit-scrollbar{
+	width: 3px;
+	margin-right:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #1f1a14;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #1f1a14;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0);
+}
+
 .container{
-	width:1200px;
-	height:720px;
-	background:#bfa76c;
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-top:-360px;
-	margin-left:-600px;
+	padding-top: auto;
+	padding-bottom: auto;
 	padding-left:0;
 	padding-right:0;
 	box-shadow:0px 0px 20px #333;
 }
 
 .container_head{
-	width:100%;
-	height:150px;
+	padding-top: 15px;
+	padding-bottom: 0px;
 	background: rgba(199,165,103,1);
 	background: -moz-linear-gradient(-45deg, rgba(199,165,103,1) 0%, rgba(151,124,81,1) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(199,165,103,1)), color-stop(100%, rgba(151,124,81,1)));
@@ -53,121 +66,219 @@ h1, h2, h3, h4, h5, .nav, .register button{
 }
 
 .container_head .left a img{
-	margin-top:35px;
-	margin-left:20px;
-}
-
-.container_head .left{
-	width:50%;
-	float:left;
-	text-align:left;
-	padding-top:10px;
-	padding-left:30px;
+	padding:35px 20px;
 }
 
 .container_head .right{
-	width:50%;
-	float:left;
-	text-align:right;
-	padding-top:50px;
-	padding-right:50px;
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 35px;
 }
 
-.right ul{
+.container_head .right ul{
+	padding-left: 0;
 	list-style:none;
 }
 
-.right ul li{
+.container_head .right ul li{
 	display:inline;
 	padding:0 5px;
 }
 
-.right ul li a{
+.container_head .right ul li a{
 	color:#fff;
 }
 
-.right button{
+.container_head .right button{
 	text-transform:uppercase;
+}
+
+/* HEADER WITH RESPONSIVE */
+
+@media (max-width: 970px) {
+	.container_head .left,
+	.container_head .right{
+		text-align: center;
+	}
+
+	.container_head .right{
+		padding-top: 10px;
+		padding-right: 0;
+	}
 }
 
 .container_body{
 	width:100%;
 	height:450px;
-	
 }
 
-.nav{
-    box-shadow: 0px 0px 10px #333;
+/*
+==== CSS FOR RESPONSIVE MENU ====
+ */
+
+.main_nav button {
+	display: block;
+	width: 100%;
+	min-height: 20px;
+	padding: 7px 15px;
+
+	text-align: center;
 }
 
-.nav ul{
-	list-style:none;
-	height: 29px;
-    padding-top: 10px;
+.main_nav button,
+.main_nav button:focus{
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
 }
 
-.nav ul li{
-	display:inline;
-	padding:10px;
+ul.nav > li{
+	display: inline-block;
 	position:relative;
 }
 
-.nav ul li a{
+ul.nav > li > a{
+	padding: 10px 7px;
+}
+
+ul.nav > li > ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+
+ul.nav > li:hover > ul{
+	display: block;
+}
+
+ul.nav > li > ul > li{
+
+}
+
+@media (max-width: 970px) {
+	ul.nav{
+
+	}
+
+	ul.nav > li{
+		display: block;
+	}
+
+	ul.nav > li > ul{
+		position: static;
+		display: list-item;
+		padding-left: 15px;
+	}
+}
+
+/*
+==== END OF RESPONSIVE MENU ====
+ */
+
+ul.nav{
+    box-shadow: 0px 0px 10px #333;
+}
+
+ul.nav > li > a{
 	color:#493f26;
 	text-transform:uppercase;
 }
 
-.nav ul li:hover, .nav ul li:hover a{
+ul.nav > li:hover,
+ul.nav > li:hover > a{
 	background: #493f26;
 	color:rgba(199,165,103,1);
 	text-decoration:none;
 }
 
-.nav ul li ul{
-	width:204px;
-	height:auto;
-	padding:5px 0px 0px;
+ul.nav > li > ul{
+	width: 100%;
+	padding: 10px 15px;
 	background:#493f26;
-	position:absolute;
-	top:39px;
-	left:10px;
-	z-index:999;
-	display:block;
-	visibility:hidden;
-	opacity:0;
-	
-	transition:all ease 0.2s;
-	-webkit-transition:all ease 0.2s;
-	-moz-transition:all ease 0.2s;
-	-o-transition:all ease 0.2s;
 }
 
-.nav ul li:hover ul{
-	display:block;
-	visibility:visible;
-	left:0;
-	opacity:1;
-	
-	transition:all ease 0.2s;
-	-webkit-transition:all ease 0.2s;
-	-moz-transition:all ease 0.2s;
-	-o-transition:all ease 0.2s;
-}
-
-.nav ul li ul li{
-	display:list-item;
+ul.nav > li > ul > li{
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-bottom:1px solid #b8a761;
 }
 
-.nav ul li ul li a{
+ul.nav > li > ul > li:last-of-type{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+ul.nav > li > ul > li > a{
 	color:#b8a761;
 	text-transform:none;
 }
 
+ul.nav .sub_nav > ul{
+	background-color: #eaeaea;
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.mask > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container_body .container-fluid{
+	height: 100%;
+}
+
+.container_body .content_right{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*
+====================== HOMPAGE CSS ======================
+ */
+
+.container_body > .container-fluid > .content{
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+}
+
+.homepage_intro{
+	position: absolute;
+	top: 55px;
+	right: 55px;
+	z-index: 99;
+
+	width: 400px;
+	height: 200px;
+
+	background:rgba(0,0,0,.6);
+	padding:15px;
+}
+
+@media (max-width: 970px){
+	.homepage_intro{
+		top:55px;
+		left: 50%;
+		margin-left: -40%;
+
+		width: 80%;
+		height: auto;
+	}
+}
+
+
 .ho_bg{
 	width:100%;
 	height:451px;
-	background:url(img/nc_003.jpg) no-repeat center center;
 	position:relative;
 }
 
@@ -196,12 +307,25 @@ h1, h2, h3, h4, h5, .nav, .register button{
 .container-fluid{
 	padding-left:0;
 	padding-right:0;
-	height:451px;
 }
 
 .content_left, .content_right{
 	height:100%;
 	background-color: #1f1a14;
+}
+
+@media (max-width: 768px){
+	.content_right{
+		height: fit-content;
+	}
+
+	/*.container_body .container-fluid{*/
+		/*display: flex;*/
+		/*flex-direction: column;*/
+	/*}*/
+
+	/*.container_body .container-fluid .content_left{ order: 2;}*/
+	/*.container_body .container-fluid .content_right{ order: 1;}*/
 }
 
 .content_left{
@@ -284,8 +408,31 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	cursor:pointer;
 }
 
+/*
+====================== PRODUCT RESIDENT ======================
+ */
+
+@media (max-width: 768px) {
+	.room{
+		width: 100%;
+	}
+}
+
+@media (max-width: 970px) {
+	.room .wrapper img {
+		top: 0;
+		left: -5%;
+	}
+
+	.room .wrapper:hover img {
+		top: 0;
+		left: 0;
+	}
+}
+
+
 .slide{
-	height:451px;
+	height:fit-content;
 	overflow:hidden;
 }
 
@@ -293,9 +440,14 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	width:100%;
 }
 
+/*
+====================== FOOTER CSS ======================
+ */
+
 .container_foot{
-	width:100%;
-	height:80px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
 	background: rgba(199,165,103,1);
 	background: -moz-linear-gradient(-45deg, rgba(199,165,103,1) 0%, rgba(151,124,81,1) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(199,165,103,1)), color-stop(100%, rgba(151,124,81,1)));
@@ -306,9 +458,8 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7a567', endColorstr='#977c51', GradientType=1 );
 }
 
-.container_foot .left, .container_foot .center, .container_foot .right{
-	width:33.33%;
-	float:left;
+.container_foot .left,
+.container_foot .right{
 	color:#fff;
 }
 
@@ -318,34 +469,13 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	text-shadow:none;
 }
 
-.container_foot .center a{
-	color:#493f26;
-}
-
 .carousel-control:hover{
 	background-image:none;
 }
 
-.container_foot .left{
-	padding-top:0;
-	padding-left:30px;
-}
-
-.container_foot .center{
-	padding-top:20px;
-	padding-left:30px;
-	text-align:center;
-}
-
 .container_foot .right p{
-	margin:0 0 0;
+	margin:25px 0 0;
 	text-align:right;
-}
-
-.container_foot .right{
-	padding-top:20px;
-	padding-right:20px;
-	float:right;
 }
 
 .modal-header, .modal-footer{
@@ -437,30 +567,6 @@ h1, h2, h3, h4, h5, .nav, .register button{
 
 .reset_padding{
 	padding:0;
-}
-
-
-/* Let's get this party started */
-::-webkit-scrollbar{
-    width: 3px;
-	margin-right:5px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-	background: #1f1a14;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background: #1f1a14;
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(0,0,0,0); 
 }
 
 textarea{
@@ -644,31 +750,8 @@ textarea{
 }
 
 
-@media (max-width: 992px) {
-	.container{
-		width:100%;
-		height:auto;
-		top:0;
-		left:0;
-		margin-top:0;
-		margin-left:0;
-		position:inherit;
-		font-size:0.75em;
-	}
-	
-	.room{
-		width:33.33%;
-		float:left;
-	}
-	
-	.slide img{
-		width:100%;
-	}
-	
-	.nav ul{
-		height:26px;
-	}
-}
+
+
 .modal-backdrop{
 	display: none;
 }

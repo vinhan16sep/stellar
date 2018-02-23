@@ -13,6 +13,7 @@ $action = isset($action[0]) ? $action[0] : '';
     <html><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
     <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stellar Garden</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> -->
@@ -25,6 +26,75 @@ $action = isset($action[0]) ? $action[0] : '';
 
 <body>
 
+<section class="container-fluid">
+    <div class="container">
+        <div class="container_head">
+            <div class="row">
+                <div class="left col-md-6 col-sm-6 col-xs-12">
+                    <a href="<?php echo site_url('index'); ?>" id="logo">
+                        <img src="<?php echo site_url('assets/public/img/logo.png'); ?>" alt="logo website">
+                    </a>
+                </div>
+                <div class="right col-md-6 col-sm-6 col-xs-12">
+                    <div class="language">
+                        <ul>
+                            <li><a href="<?php echo site_url('/vi'); ?>">Tiếng Việt</a></li>
+                            <li>|</li>
+                            <li><a href="<?php echo site_url('/en'); ?>">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="register">
+                        <button class="btn btn-default hvr-shutter-out-horizontal" type="submit" data-toggle="modal" data-target="#register"><?php echo $this->lang->line('Apartment_Registration'); ?></button>
+                    </div>
+                </div>
+                <div class="main_nav col-md-12 col-sm-12 col-xs-12">
+                    <button class="mobile_nav_btn hidden-lg">
+                        <i class="fa fa-bars" aria-hidden="true"></i> <span>Menu</span>
+                    </button>
+                    <ul class="nav">
+                        <li class="sub_nav <?php echo ($action == 'homepage') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('homepage'); ?>"><?php echo $this->lang->line('home'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'overview') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('overview'); ?>"><?php echo $this->lang->line('Project_Overview'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'location') ? 'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('location'); ?>"><?php echo $this->lang->line('Location'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'proresident' || $action == 'promall') ?  'nav_active' : ''; ?>">
+                            <a href="#" class="disabled"><?php echo $this->lang->line('Product'); ?> <span class="badge">2</span> </a>
+                            <ul class="list-unstyled">
+                                <li><a href="<?php echo site_url('proresident'); ?>"><?php echo $this->lang->line('Apartment'); ?></a></li>
+                                <li><a href="<?php echo site_url('promall'); ?>"><?php echo $this->lang->line('Trade_Center'); ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'utilities') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('utilities'); ?>"><?php echo $this->lang->line('Utilities'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'progress') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('progress'); ?>"><?php echo $this->lang->line('Update_Project'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'investers' || $action == 'partners') ? 'nav_active' : ''; ?>">
+                            <a href="#" class="disabled"><?php echo $this->lang->line('Owner_Partner'); ?> <span class="badge">2</span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="<?php echo site_url('investers'); ?>"><?php echo $this->lang->line('Owner'); ?></a></li>
+                                <li><a href="<?php echo site_url('partners'); ?>"><?php echo $this->lang->line('Partner'); ?></a></li>
+                            </ul>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'faq') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('faq'); ?>"><?php echo $this->lang->line('qa'); ?></a>
+                        </li>
+                        <li class="sub_nav <?php echo ($action == 'download') ?  'nav_active' : ''; ?>">
+                            <a href="<?php echo site_url('download'); ?>"><?php echo $this->lang->line('download'); ?></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+<!--
 <div class="container center-block clearfix">
     <div class="container_head">
         <div class="left">
@@ -47,7 +117,7 @@ $action = isset($action[0]) ? $action[0] : '';
     <div class="container_body">
         <div class="nav">
             <ul>
-            <!-- InstanceBeginEditable name="nav" -->
+
                 <li class="nav_li <?php echo ($action == 'homepage') ?  'nav_active' : ''; ?>"><a href="<?php echo site_url('homepage'); ?>"><?php echo $this->lang->line('home'); ?></a></li>
                 <li class="nav_li <?php echo ($action == 'overview') ?  'nav_active' : ''; ?>"><a href="<?php echo site_url('overview'); ?>"><?php echo $this->lang->line('Project_Overview'); ?></a></li>
                 <li class="nav_li <?php echo ($action == 'location') ? 'nav_active' : ''; ?>"><a href="<?php echo site_url('location'); ?>"><?php echo $this->lang->line('Location'); ?></a></li>
@@ -69,7 +139,7 @@ $action = isset($action[0]) ? $action[0] : '';
                 </li>
                 <li class="nav_li <?php echo ($action == 'faq') ?  'nav_active' : ''; ?>"><a href="<?php echo site_url('faq'); ?>"><?php echo $this->lang->line('qa'); ?></a></li>
                 <li class="nav_li <?php echo ($action == 'download') ?  'nav_active' : ''; ?>"><a href="<?php echo site_url('download'); ?>"><?php echo $this->lang->line('download'); ?></a></li>
-            <!-- InstanceEndEditable -->
+
             </ul>
         </div>
-    
+-->

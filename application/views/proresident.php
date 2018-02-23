@@ -1,6 +1,6 @@
 <div class="container-fluid">
 <!-- InstanceBeginEditable name="content" -->
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 content_left">
+<div class="col-md-4 col-sm-4 col-xs-12 content_left">
     <h4 class="title"><?php echo $this->lang->line('Tower'); ?></h4>
     <div class="text fadeinUp">
         <p class="paragraph"><?php echo $this->lang->line('Tower_1'); ?></p>
@@ -8,7 +8,7 @@
         <a href="#" id="map"><?php echo $this->lang->line('Tower_view_more'); ?></a>
     </div>
 </div>
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 content_right reset_padding resident">
+<div class="col-md-8 col-sm-8 col-xs-12 content_right resident">
     <div class="room_select" id="room_select">
         <div class="room" id="room_a">
             <div class="wrapper">
