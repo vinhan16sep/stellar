@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php
 
 $action = explode('/',$_SERVER['REQUEST_URI']);
-$action = isset($action[2]) ? explode('?',$action[2]) : '' ;
+$action = isset($action[3]) ? explode('?',$action[3]) : '' ;
 $action = isset($action[0]) ? explode('&',$action[0]) : '';
 $action = isset($action[0]) ? $action[0] : '';
  ?>
@@ -53,39 +53,39 @@ $action = isset($action[0]) ? $action[0] : '';
                     </button>
                     <ul class="nav">
                         <li class="sub_nav <?php echo ($action == 'homepage') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('homepage'); ?>"><?php echo $this->lang->line('home'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/homepage') : site_url('en/homepage'); ?>"><?php echo $this->lang->line('home'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'overview') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('overview'); ?>"><?php echo $this->lang->line('Project_Overview'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/overview') : site_url('en/overview'); ?>"><?php echo $this->lang->line('Project_Overview'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'location') ? 'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('location'); ?>"><?php echo $this->lang->line('Location'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/location') : site_url('en/location'); ?>"><?php echo $this->lang->line('Location'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'proresident' || $action == 'promall') ?  'nav_active' : ''; ?>">
-                            <a href="#" class="disabled"><?php echo $this->lang->line('Product'); ?> <span class="badge">2</span> </a>
+                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Product'); ?> <span class="badge">2</span> </a>
                             <ul class="list-unstyled">
-                                <li><a href="<?php echo site_url('proresident'); ?>"><?php echo $this->lang->line('Apartment'); ?></a></li>
-                                <li><a href="<?php echo site_url('promall'); ?>"><?php echo $this->lang->line('Trade_Center'); ?></a></li>
+                                <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/proresident') : site_url('en/proresident'); ?>"><?php echo $this->lang->line('Apartment'); ?></a></li>
+                                <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/promall') : site_url('en/promall'); ?>"><?php echo $this->lang->line('Trade_Center'); ?></a></li>
                             </ul>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'utilities') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('utilities'); ?>"><?php echo $this->lang->line('Utilities'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/utilities') : site_url('en/utilities'); ?>"><?php echo $this->lang->line('Utilities'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'progress') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('progress'); ?>"><?php echo $this->lang->line('Update_Project'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/progress') : site_url('en/progress'); ?>"><?php echo $this->lang->line('Update_Project'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'investers' || $action == 'partners') ? 'nav_active' : ''; ?>">
-                            <a href="#" class="disabled"><?php echo $this->lang->line('Owner_Partner'); ?> <span class="badge">2</span></a>
+                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Owner_Partner'); ?> <span class="badge">2</span></a>
                             <ul class="list-unstyled">
-                                <li><a href="<?php echo site_url('investers'); ?>"><?php echo $this->lang->line('Owner'); ?></a></li>
-                                <li><a href="<?php echo site_url('partners'); ?>"><?php echo $this->lang->line('Partner'); ?></a></li>
+                                <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/investers') : site_url('en/investers'); ?>"><?php echo $this->lang->line('Owner'); ?></a></li>
+                                <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/partners') : site_url('en/partners'); ?>"><?php echo $this->lang->line('Partner'); ?></a></li>
                             </ul>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'faq') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('faq'); ?>"><?php echo $this->lang->line('qa'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/faq') : site_url('en/faq'); ?>"><?php echo $this->lang->line('qa'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'download') ?  'nav_active' : ''; ?>">
-                            <a href="<?php echo site_url('download'); ?>"><?php echo $this->lang->line('download'); ?></a>
+                            <a href="<?php echo ($lang == 'vi') ? site_url('vi/download') : site_url('en/download'); ?>"><?php echo $this->lang->line('download'); ?></a>
                         </li>
                     </ul>
                 </div>

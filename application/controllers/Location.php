@@ -12,6 +12,7 @@ class location extends Public_Controller {
 		$this->load->model('homepage_model');
 		$this->load->model('references_model');
 		$this->load->helper('form');
+        $this->data['lang'] = $this->session->userdata('langAbbreviation');
 	}
     
 	public function index() {

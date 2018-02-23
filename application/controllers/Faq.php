@@ -14,6 +14,7 @@ class faq extends Public_Controller {
 		$this->load->helper('form');
         $this->load->model('qa_model');
         $this->load->library('session');
+        $this->data['lang'] = $this->session->userdata('langAbbreviation');
 	}
     
 	public function index() {

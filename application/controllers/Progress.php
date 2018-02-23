@@ -10,6 +10,7 @@ class progress extends Public_Controller {
 		$this->load->helper('form');
         $this->load->model('banners_model');
         $this->load->library('session');
+        $this->data['lang'] = $this->session->userdata('langAbbreviation');
 	}
     
 	public function index($id = NULL) {
