@@ -66,11 +66,17 @@ h1, h2, h3, h4, h5, .nav, .register button{
 }
 
 .container_head .left a img{
-	margin-top:35px;
-	margin-left:20px;
+	padding:35px 20px;
+}
+
+.container_head .right{
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 35px;
 }
 
 .container_head .right ul{
+	padding-left: 0;
 	list-style:none;
 }
 
@@ -93,6 +99,11 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	.container_head .left,
 	.container_head .right{
 		text-align: center;
+	}
+
+	.container_head .right{
+		padding-top: 10px;
+		padding-right: 0;
 	}
 }
 
@@ -397,6 +408,29 @@ ul.nav .sub_nav > ul{
 	cursor:pointer;
 }
 
+/*
+====================== PRODUCT RESIDENT ======================
+ */
+
+@media (max-width: 768px) {
+	.room{
+		width: 100%;
+	}
+}
+
+@media (max-width: 970px) {
+	.room .wrapper img {
+		top: 0;
+		left: -5%;
+	}
+
+	.room .wrapper:hover img {
+		top: 0;
+		left: 0;
+	}
+}
+
+
 .slide{
 	height:fit-content;
 	overflow:hidden;
@@ -440,7 +474,7 @@ ul.nav .sub_nav > ul{
 }
 
 .container_foot .right p{
-	margin:0 0 0;
+	margin:25px 0 0;
 	text-align:right;
 }
 
