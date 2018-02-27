@@ -45,6 +45,24 @@ h1, h2, h3, h4, h5, .nav, .register button{
 	background: rgba(0,0,0,0);
 }
 
+section.container-fluid{
+	margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+	section.container-fluid{
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 970px) {
+	section.container-fluid{
+		margin-top: 0px;
+	}
+}
+
+
+
 .container{
 	padding-top: auto;
 	padding-bottom: auto;
@@ -433,7 +451,7 @@ ul.nav .sub_nav > ul{
 
 
 .slide{
-	height:fit-content;
+	height:100%;
 	overflow:hidden;
 }
 
