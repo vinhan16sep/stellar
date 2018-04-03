@@ -124,6 +124,10 @@ section.container-fluid{
 		padding-top: 10px;
 		padding-right: 0;
 	}
+
+	.container_head .left a img{
+		padding:10px 20px;
+	}
 }
 
 .container_body{
