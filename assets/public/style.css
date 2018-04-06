@@ -361,6 +361,10 @@ ul.nav .sub_nav > ul{
 	overflow-y:scroll;
 }
 
+.text a{
+    color:rgba(199,165,103,1);
+}
+
 .room{
 	width:16.66%;
 	float:left;
@@ -538,28 +542,6 @@ ul.nav .sub_nav > ul{
 	text-align:justify;
 }
 
-.col_4{
-	width:33.33%;
-	height:451px;
-	float:left;
-	background:rgba(0,0,0,.6);
-	padding:15px;
-}
-
-.col_8{
-	width:66.66%;
-	height:451px;
-	float:left;
-	padding:15px;
-}
-
-.col_3{
-	width:25%;
-	height:451px;
-	float:left;
-	padding:15px;
-}
-
 #register table{
 	width:100%;
 }
@@ -626,40 +608,24 @@ textarea{
 	margin-top:40px;
 }
 
-.map_bg{
-	width:100%;
-	height:100%;
-	position:fixed;
-	left:0;
-	top:0;
-	background:rgba(0,0,0,0.6);
-	z-index:1050;
+
+
+@media (max-width: 768px) {
+    .map_bg img{
+        position: fixed;
+        width: 90%;
+        height: auto;
+        top:20px;
+        margin-top: 0;
+        margin-left: -45%;
+    }
+
+    .map_bg button{
+        margin-top:20px;
+        margin-right:20px;
+    }
 }
 
-.map_bg img{
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-top: -225px;
-    margin-left: -400px;
-}
-
-.map_bg button{
-	margin-top:100px;
-	margin-right:100px;
-	color:#fff;
-	opacity:1;
-}
-
-.map_bg button:hover{
-	color:#fff;
-	opacity:1;
-}
-
-#map{
-	color:rgba(199,165,103,1);
-	text-decoration:none;
-}
 
 .download table, .partners table{
 	width:100%;
@@ -706,6 +672,7 @@ textarea{
 	top:0;
 	left:0;
 	z-index:4;
+    height: fit-content !important;
 }
 
 .resident .close{
@@ -792,12 +759,4 @@ textarea{
 	border:2px solid #fff;
 	color:#fff;
 	border-radius:10px;
-}
-
-@media (max-width: 768px){
-	#map_bg img{
-		width: 100%;
-		left: 0;
-		margin-left: 0;
-	}
 }

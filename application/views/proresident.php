@@ -5,7 +5,7 @@
     <div class="text fadeinUp">
         <p class="paragraph"><?php echo $this->lang->line('Tower_1'); ?></p>
         <p class="paragraph"><?php echo $this->lang->line('Tower_2'); ?></p>
-        <a href="#" id="map"><?php echo $this->lang->line('Tower_view_more'); ?></a>
+        <a href="#" data-toggle="modal" data-target="#map_bg"><?php echo $this->lang->line('Tower_view_more'); ?></a>
     </div>
 </div>
 <div class="col-md-8 col-sm-8 col-xs-12 content_right resident">
@@ -64,15 +64,15 @@
         </div>
       </div>
     
-      <!-- Controls 
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+
+      <a class="left carousel-control" href="#re_a" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>-->
+      </a>
     </div> 
     
     <div id="re_b" class="carousel slide" data-ride="carousel">
@@ -168,9 +168,18 @@
     </div>        
 </div>
 
-<div class="map_bg" id="map_bg">
-    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <img src="<?php echo site_url('assets/public/img/map.jpg'); ?>" alt="">
+
+<div class="modal fade" id="map_bg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<img src="<?php echo site_url('assets/public/img/map.jpg'); ?>" alt="">
+			</div>
+
+		</div>
+	</div>
 </div>
 
 <!-- InstanceEndEditable -->
