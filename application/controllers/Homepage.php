@@ -96,8 +96,8 @@ class Homepage extends Public_Controller {
 		        $message .= '<p> you got mail, let\'s check it now:</p>';
 		        $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 		        $message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($post['name']) . "</td></tr>";
-		        $message .= "<tr><td><strong>workplace:</strong> </td><td>" . strip_tags($post['workplace']) . "</td></tr>";
-                $message .= "<tr><td><strong>grade:</strong> </td><td>" . strip_tags($post['grade']) . "</td></tr>";
+		        //$message .= "<tr><td><strong>workplace:</strong> </td><td>" . strip_tags($post['workplace']) . "</td></tr>";
+                //$message .= "<tr><td><strong>grade:</strong> </td><td>" . strip_tags($post['grade']) . "</td></tr>";
                 $message .= "<tr><td><strong>address:</strong> </td><td>" . strip_tags($post['address']) . "</td></tr>";
                 $message .= "<tr><td><strong>tel:</strong> </td><td>" . strip_tags($post['tel']) . "</td></tr>";
                 $message .= "<tr><td><strong>mail:</strong> </td><td>" . strip_tags($post['mail']) . "</td></tr>";

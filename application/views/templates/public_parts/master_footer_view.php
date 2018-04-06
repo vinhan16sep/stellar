@@ -34,7 +34,8 @@
                 <th>&nbsp;</th>
                 <th><input type="text" class="form-control" id="InputName" name="name" placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_name'); ?> (* bắt buộc)"></th>
             </tr>
-            <tr>
+            <!--
+			<tr>
                 <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_Workplace'); ?></th>
                 <th>&nbsp;</th>
                 <th><input type="text" class="form-control" id="InputWorkplace" name="workplace"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_Workplace'); ?>"></th>
@@ -44,6 +45,7 @@
                 <th>&nbsp;</th>
                 <th><input type="text" class="form-control" id="InputGrade" name="grade"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_grade'); ?>"></th>
             </tr>
+            -->
             <tr>
                 <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_address'); ?></th>
                 <th>&nbsp;</th>
