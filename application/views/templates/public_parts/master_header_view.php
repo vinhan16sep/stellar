@@ -14,6 +14,7 @@ $action = isset($action[0]) ? $action[0] : '';
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="35 Lê Văn Thiêm, Chủ đầu tư, Nơi khởi nguồn hạnh phúc">
 	<meta name="description" content="35 Lê Văn Thiêm - Chủ đầu tư - Nơi khởi nguồn hạnh phúc">
 
 	<title>Stellar Garden</title>
