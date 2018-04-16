@@ -8,7 +8,7 @@
                 <table>
                     <tr>
                         <th><img src="<?php echo site_url('assets/public/img/icon.png'); ?>" alt=""></th>
-                          <th><a href="<?php echo site_url('assets/public/img/brochure3.pdf'); ?>" target="_blank" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_slide"><?php echo $this->lang->line('download_view_online'); ?></a></th>
+                          <th><a href="<?php echo site_url('assets/public/img/brochure3.pdf'); ?>" download="<?php echo site_url('assets/public/img/brochure3.pdf'); ?>" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_slide">Download</a></th>
                       </tr>
                   </table>
       <!--<p class="paragraph">Video</p>
