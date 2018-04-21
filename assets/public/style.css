@@ -551,6 +551,13 @@ ul.nav .sub_nav > ul{
 	color:#fff;
 }
 
+@media (max-width: 768px) {
+	#register .table-mobile table tr th{
+		display: table-row;
+		border-top-color: transparent;
+	}
+}
+
 #register table input, #register table textarea{
 	background:#514935;
 	color:#fff;

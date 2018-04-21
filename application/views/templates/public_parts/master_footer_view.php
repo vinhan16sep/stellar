@@ -67,7 +67,7 @@
                 <th><input type="number" class="form-control" id="InputFax"  name="fax"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_Fax'); ?>"></th>
             </tr>-->
         </table>
-        <div class="table-responsive">
+        <div class="table-mobile">
             <table class="table">
                 <tr>
                     <th colspan="5"><h4 class="title"><?php echo $this->lang->line('CUSTOMER_INFORMATION_CONCERN'); ?></h4></th>
@@ -102,7 +102,7 @@
             </table>
         </div>
 
-        <div class="table-responsive">
+        <div class="table-mobile">
             <table class="table">
                 <tr>
                     <th colspan="4"><h4 class="title"><?php echo $this->lang->line('CUSTOMER_INFORMATION_Know_STELLAR'); ?></h4></th>
