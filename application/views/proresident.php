@@ -51,7 +51,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="<?php echo site_url('assets/public/img/nt_001.jpg'); ?>" alt="...">
+					<img src="<?php echo site_url('assets/public/img/MBCH_A.jpg'); ?>" alt="...">
 
 				</div>
 				<div class="item">

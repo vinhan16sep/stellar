@@ -77,12 +77,12 @@ $lang['CUSTOMER_INFORMATION_Send'] = 'Gửi thông tin';
 
 // utilities
 $lang['utilities_title'] = 'KHÁM PHÁ KHÔNG GIAN XANH ĐẲNG CẤP VÀ TIỆN ÍCH VƯỢT TRỘI';
-$lang['utilities_1'] = 'Hiện đại, sang trọng nhưng thân thiện với môi trường là tôn chỉ phát triển của Chung cư Stellar Garden 35 Lê Văn Thiêm của Công ty CP Kinh doanh và Xây dựng Quang Minh.';
-$lang['utilities_2'] = 'Toàn bộ các hệ thông trong tòa nhà đều được chủ đầu tư đặc biệt chú trọng trong khâu thiết kế nhằm bảo vệ môi trường tự nhiên và cả môi trường sống cho cư dân của dự án.';
-$lang['utilities_3'] = 'Các tầng dưới 1 - 5 và tầng M là trung tâm thương mại và dịch vụ, mặt bằng rộng lớn được bố trí rõ ràng các khu vực sảnh chờ, khu vực cho thuê';
-$lang['utilities_4'] = 'Từ tầng 6 trở lên đến tầng 28 là các căn hộ với diện tích hợp lý từ 2 đến 3 phòng ngủ được thiết kế hài hòa giữa các phòng, đảm bảo yếu tố không gian thoáng căn hộ các lô gia; cửa sổ đón gió và ánh sáng tự nhiên. Tối ưu hóa việc thể hiện công năng sử dụng phòng khách phòng ăn, phòng ngủ, bếp, wc.';
-$lang['utilities_5'] = 'Thiết kế cảnh quan thông minh, tinh tế luôn đảm bảo nguồn gió và ánh sáng tự nhiên đến từng căn hộ. Bể bơi 4 mùa rộng hơn 400m2 được thiết kế hài hòa mang lại tiện ích đẳng cấp cho cư dân.';
-$lang['utilities_6'] = 'Bên cạnh các yếu tố về không gian, các cư dân còn được tận hưởng hệ thống tiện ích hoàn hảo. Với 5 tầng đế làm trung tâm thương mại 1 tầng dịch vụ bể bơi và 2 tầng hầm để xe, dự án đảm bảo cung cấp đáp ứng nhu cầu của các gia đình tương lai. Bên cạnh đó, các tiện ích đạt chuẩn chất lượng cao như bể bơi, phòng tập thể thao đa năng, spa, trường mẫu giáo … cũng góp phần xây dựng Chung cư Stellar Garden 35 Lê Văn Thiêm thành một quần thể khép kín với đầy đủ tiện nghi cho một cuộc sống văn minh và chất lượng.';
+$lang['utilities_1'] = 'Không chỉ đẳng cấp trong từng căn hộ, các cư dân Stellar Garden còn được tận hưởng hệ thống tiện ích hoàn hảo.';
+$lang['utilities_2'] = 'Toàn bộ các hệ thống trong tòa nhà đều được Chủ Đầu tư đặc biệt chú trọng trong khâu thiết kế nhằm bảo vệ môi trường tự nhiên và cả môi trường sống cho cư dân của dự án.';
+$lang['utilities_3'] = 'Các tầng dưới 1-5 và tầng M là trung tâm thương mại và dịch vụ, mặt bằng rộng lớn được bố trí rõ ràng các khu vực sảnh chờ, khu vực cho thuê, với các thương hiệu lớn, đáp ứng nhu cầu mua sắm, giải trí của các gia đình tương lai.';
+$lang['utilities_4'] = 'Từ tầng 6 trở lên đến tầng 28 là các căn hộ với diện tích hợp lý từ 2 đến 3 phòng ngủ được thiết kế hài hòa giữa các phòng, đảm bảo yếu tố không gian thoáng. Căn hộ có các lô gia, cửa sổ đón gió và ánh sáng tự nhiên, tối ưu hóa công năng sử dụng phòng khách phòng ăn, phòng ngủ, bếp, wc.';
+$lang['utilities_5'] = 'Được thiết kế nằm giữa 2 tòa tháp, bể bơi bốn mùa rộng hơn 400m2 mang lại đẳng cấp tiện nghi cho cư dân.';
+$lang['utilities_6'] = 'Bên cạnh đó, các tiện ích như phòng tập thể thao đa năng, Spa, trường mẫu giáo,… đạt chuẩn chất lượng cao cũng góp phần xây dựng Chung cư Stellar Garden 35 Lê Văn Thiêm thành một quần thể khép kín với đầy đủ tiện nghi cho một cuộc sống văn minh và chất lượng.';
 
 //INVESTOR
 $lang['INVESTOR'] = 'CHỦ ĐẦU TƯ';

@@ -27,8 +27,13 @@
                     </div>
                     <div class="item">
                         <img src="<?php echo site_url('assets/public/img/u_003.jpg'); ?>" alt="...">
-
                     </div>
+					<div class="item">
+						<img src="<?php echo site_url('assets/public/img/gym.jpg'); ?>" alt="...">
+					</div>
+					<div class="item">
+						<img src="<?php echo site_url('assets/public/img/pool.jpg'); ?>" alt="...">
+					</div>
                 </div>
 
                 <!-- Controls -->

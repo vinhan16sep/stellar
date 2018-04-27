@@ -65,7 +65,7 @@ $action = isset($action[0]) ? $action[0] : '';
                             <a href="<?php echo ($lang == 'vi') ? site_url('vi/location') : site_url('en/location'); ?>"><?php echo $this->lang->line('Location'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'proresident' || $action == 'promall') ?  'nav_active' : ''; ?>">
-                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Product'); ?> <span class="badge">2</span> </a>
+                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Product'); ?></a>
                             <ul class="list-unstyled">
                                 <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/proresident') : site_url('en/proresident'); ?>"><?php echo $this->lang->line('Apartment'); ?></a></li>
                                 <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/promall') : site_url('en/promall'); ?>"><?php echo $this->lang->line('Trade_Center'); ?></a></li>
@@ -78,7 +78,7 @@ $action = isset($action[0]) ? $action[0] : '';
                             <a href="<?php echo ($lang == 'vi') ? site_url('vi/progress') : site_url('en/progress'); ?>"><?php echo $this->lang->line('Update_Project'); ?></a>
                         </li>
                         <li class="sub_nav <?php echo ($action == 'investers' || $action == 'partners') ? 'nav_active' : ''; ?>">
-                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Owner_Partner'); ?> <span class="badge">2</span></a>
+                            <a href="javascript:void(0);" class="disabled"><?php echo $this->lang->line('Owner_Partner'); ?></a>
                             <ul class="list-unstyled">
                                 <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/investers') : site_url('en/investers'); ?>"><?php echo $this->lang->line('Owner'); ?></a></li>
                                 <li><a href="<?php echo ($lang == 'vi') ? site_url('vi/partners') : site_url('en/partners'); ?>"><?php echo $this->lang->line('Partner'); ?></a></li>
