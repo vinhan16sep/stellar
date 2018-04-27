@@ -75,12 +75,12 @@ $lang['CUSTOMER_INFORMATION_Send'] = 'Send information';
 
 // utilities
 $lang['utilities_title'] = 'DISCOVER THE GREEN SPACE AND LEISURE EXCEPTIONS';
-$lang['utilities_1'] = 'Modern, luxurious but environmentally friendly is the principle of development of Stellar Garden Apartment 35 Le Van Thiem of Quang Minh Construction and Trading JSC.';
-$lang['utilities_2'] = 'All the buildings in the building are invested by the owner with special emphasis on design to protect the natural environment and habitat for residents of the project.';
-$lang['utilities_3'] = 'The lower floors 1-5 and the M-floor are commercial and service centers, large premises are clearly arranged lounges and areas for rent.';
-$lang['utilities_4'] = 'From floors 6 up to the 28 floor are the apartments with reasonable area from 2 to 3 bedrooms designed harmony between the rooms, ensuring the spacious space apartment block; Window wind and natural light. Optimize the performance of the use of living room dining room, bedroom, kitchen, wc.';
-$lang['utilities_5'] = 'Intelligent, elegant design always ensures the wind and natural light to each apartment. The 400m2 four-season swimming pool is designed in harmony to provide the utmost convenience to the residents.';
-$lang['utilities_6'] = 'Apart from the spatial factors, the residents also enjoy the perfect utility system. With 5 ground floor commercial centers, one swimming pool service and 2 basement parking spaces, the project ensures the supply meets the needs of future families. Besides, the high standard facilities such as swimming pool, multi-purpose gym, spa, kindergarten ... also contribute to the construction of Stellar Garden 35 Le Van Thiem to a closed population filled with full. Comfortable enough for a civilized and quality life.';
+$lang['utilities_1'] = 'Not only in every apartment, residents of Stellar Garden also enjoy the perfect utility system.';
+$lang['utilities_2'] = 'All the systems in the building are specially invested by the Investor in the design to protect the natural environment and habitat for residents of the project.';
+$lang['utilities_3'] = 'The 1-5 storey and M floor are commercial and service centers, large premises are clearly arranged lounges, rental areas, with large brands, meeting the shopping needs. , the entertainment of the future family.';
+$lang['utilities_4'] = 'From floors 6 up to the 28 floor are the apartments with reasonable area from 2 to 3 bedrooms are designed harmony between the rooms, ensuring the space airy. The apartment has lots of windows, airy windows and natural light, optimizing the use of living room, dining room, bedroom, kitchen, wc.';
+$lang['utilities_5'] = 'Designed between two towers, the four-seater pool of more than 400m2 provides a level of comfort for residents.';
+$lang['utilities_6'] = 'In addition, the facilities such as multi-function gym, spa, kindergarten ... high quality standards also contribute to the construction of Stellar Garden 35 Le Van Thiem into a fully enclosed community with full facilities. It is for a civilized and quality life.';
 
 //INVESTOR
 $lang['INVESTOR'] = 'INVESTOR';
