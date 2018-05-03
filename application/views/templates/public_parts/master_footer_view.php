@@ -1,11 +1,11 @@
         <div class="container_foot container-fluid">
-                <div class="left col-md-6 col-sm-6 col-xs-12">
+                <div class="left col-md-3 col-sm-6 col-xs-12">
                     <h4>Hotline : <span class="tel highlight">(84-4) 668.00.886</span></h4>
-                    <h5><?php echo $this->lang->line('Sales_office_and_project_address'); ?>
+                    <span><?php echo $this->lang->line('Sales_office_and_project_address'); ?>
                         <br>
-                        <?php echo $this->lang->line('footer_address'); ?></h5>
+                        <?php echo $this->lang->line('footer_address'); ?></span>
                 </div>
-                <div class="right col-md-6 col-sm-6 col-xs-12">
+                <div class="center col-md-6 col-sm-6 col-xs-12">
                     <p><?php echo $this->lang->line('coppy_right_1'); ?></p>
                     <!--<p><?php echo $this->lang->line('coppy_right_2'); ?></p>-->
                 </div>
