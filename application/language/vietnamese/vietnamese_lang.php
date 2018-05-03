@@ -50,7 +50,7 @@ $lang['Tower_Apartment'] = 'Căn Hộ';
 // footer
 $lang['Sales_office_and_project_address:'] = 'Văn phòng bán hàng và địa chỉ dự án:';
 $lang['footer_address'] = 'Số 35 Lê Văn Thiêm, Thanh Xuân, Hà Nội';
-$lang['coppy_right_1'] = 'Bản quyền thuộc về: Công ty KD và XD Quang Minh';
+$lang['coppy_right_1'] = 'Bản quyền thuộc về: Công ty CP Kinh doanh và Xây dựng Quang Minh';
 $lang['coppy_right_2'] = 'Phát triển bởi Mato Creative';
 
 //register home

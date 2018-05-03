@@ -162,7 +162,7 @@ ul.nav > li{
 
 ul.nav > li > a{
 	padding: 10px 5px;
-	font-size: 1.125em;
+	font-size: 1.13em;
 }
 
 ul.nav > li > ul{
@@ -487,7 +487,7 @@ ul.nav .sub_nav > ul{
 }
 
 .container_foot .left,
-.container_foot .right{
+.container_foot .center{
 	color:#fff;
 }
 
@@ -497,13 +497,18 @@ ul.nav .sub_nav > ul{
 	text-shadow:none;
 }
 
+.container_foot .left > span{
+	font-size: 13px;
+	margin-top: 7px;
+}
+
 .carousel-control:hover{
 	background-image:none;
 }
 
-.container_foot .right p{
+.container_foot .center p{
 	margin:25px 0 0;
-	text-align:right;
+	text-align:center;
 }
 
 .modal-header, .modal-footer{
