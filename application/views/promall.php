@@ -2,12 +2,9 @@
     <div class="container-fluid">
         <!-- InstanceBeginEditable name="content" -->
         <div class="content_left col-md-4 col-sm-4 col-xs-12">
-            <h4 class="title">Trung tâm thương mại</h4>
+            <h4 class="title"><?php echo $Post['title']; ?></h4>
             <div class="text fadeinUp">
-                <p class="paragraph">
-                    Đặt trên 5 tầng đế với tổng diện tích lên tới 38.144m2, trung tâm thương mại tại Stellar Garden là không gian mua sắm rộng mở, hội tụ nhiều dòng sản phẩm và thương hiệu nổi tiếng trong nước và quốc tế. Không chỉ được thỏa mãn đam mê mua sắm, khách hàng đến đây còn có thể tận hưởng những phút giây nghỉ ngơi thư giãn với chuỗi không gian ẩm thực, café và giải trí sang trọng, tiện nghi. Đây là mô hình phát triển cơ sở hạ tầng đã được áp dụng và triển khai thành công ở nhiều nước trên thế giới sẽ góp phần đưa nơi đây trở thành điểm đến lý tưởng cho người dân thủ đô.
-                </p>
-
+                <p class="paragraph"><?php echo $Post['content']; ?></p>
             </div>
         </div>
         <div class="content_right col-md-8 col-sm-8 col-xs-12">

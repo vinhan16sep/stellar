@@ -1,10 +1,9 @@
 <div class="container-fluid">
 	<!-- InstanceBeginEditable name="content" -->
 	<div class="col-md-4 col-sm-4 col-xs-12 content_left">
-		<h4 class="title"><?php echo $this->lang->line('Tower'); ?></h4>
+		<h4 class="title"><?php echo $Post['title']; ?></h4>
 		<div class="text fadeinUp">
-			<p class="paragraph"><?php echo $this->lang->line('Tower_1'); ?></p>
-			<p class="paragraph"><?php echo $this->lang->line('Tower_2'); ?></p>
+			<p class="paragraph"><?php echo $Post['content']; ?></p>
 			<a href="#" data-toggle="modal" data-target="#map_bg"><?php echo $this->lang->line('Tower_view_more'); ?></a>
 		</div>
 	</div>

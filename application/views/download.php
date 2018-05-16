@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <!-- InstanceBeginEditable name="content" -->
       <div class="col-md-4 col-sm-4 col-xs-12 content_left download">
-          <h4 class="title highlight"><?php echo $this->lang->line('download_title'); ?></h4>
+          <h4 class="title highlight"><?php echo $Post['title']; ?></h4>
           <div class="text fadeinUp">
             <p class="paragraph">Brochure</p>
                 <table>
@@ -15,7 +15,7 @@
                 <table>
                     <tr>
                         <th><img src="<?php echo site_url('assets/public/img/icon2.png'); ?>" alt=""></th>
-                          <th><a target="_blank" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_vid"><?php echo $this->lang->line('download_view_online'); ?></a></th>
+                          <th><a target="_blank" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_vid"><?php echo $Post['content']; ?></a></th>
                       </tr>
                   </table>     -->
         </div>

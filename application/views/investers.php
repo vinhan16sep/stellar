@@ -2,9 +2,9 @@
     <div class="container-fluid">
         <!-- InstanceBeginEditable name="content" -->
         <div class="col-md-4 col-sm-4 col-xs-12 content_left">
-            <h4 class="title"><?php echo $this->lang->line('INVESTOR'); ?></h4>
+            <h4 class="title"><?php echo $Post['title']; ?></h4>
             <div class="text fadeinUp">
-              <p class="paragraph"><?php echo $this->lang->line('INVESTOR_1'); ?></p>
+              <p class="paragraph"><?php echo $Post['content']; ?></p>
           </div>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-12 content_right">

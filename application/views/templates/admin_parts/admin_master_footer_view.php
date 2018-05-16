@@ -1,12 +1,22 @@
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+    </div>
+    <strong>Admin Controller by <a href="http://matocreative.vn/" target="_blank">Mato Creative</a>.</strong> All rights reserved.
+</footer>
 
+
+</body>
 
 <!-- javascripts -->
-<script src="<?php echo site_url('assets/admin/js/jquery.js'); ?>"></script>
+<script src="<?php echo site_url('assets/admin/js/jquery.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/jquery-ui-1.10.4.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/jquery-1.8.3.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo site_url('assets/admin/js/jquery-ui-1.9.2.custom.min.js'); ?>"></script>
 <!-- bootstrap -->
 <script src="<?php echo site_url('assets/admin/js/bootstrap.min.js'); ?>"></script>
+
+
 <!-- nice scroll -->
 <script src="<?php echo site_url('assets/admin/js/jquery.scrollTo.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/jquery.nicescroll.js'); ?>" type="text/javascript"></script>
@@ -15,18 +25,19 @@
 <!-- custom select -->
 <script src="<?php echo site_url('assets/admin/js/jquery.customSelect.min.js'); ?>" ></script>
 
+<script type="text/javascript" src="<?php echo site_url('') ?>tinymce/tinymce.min.js"></script>
 <!--custome script for all page-->
 <script src="<?php echo site_url('assets/admin/js/scripts.js'); ?>"></script>
 <!-- custom script for this page-->
 <script src="<?php echo site_url('assets/admin/js/jquery.autosize.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/jquery.placeholder.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/gdp-data.js'); ?>"></script>	
-<script src="<?php echo site_url('assets/admin/js/jquery.slimscroll.min.js'); ?>"></script>
 
 <script src="<?php echo site_url('assets/admin/js/admin/users.js'); ?>"></script>	
 <script src="<?php echo site_url('assets/admin/js/admin/groups.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/admin/languages.js'); ?>"></script>
 <script src="<?php echo site_url('assets/admin/js/admin/dashboard.js'); ?>"></script>
+<script src="<?php echo site_url('assets/admin/js') ?>/adminlte.min.js"></script>
 
 <script type="text/javascript">
     
@@ -61,6 +72,7 @@
 
 
     });
+    
 </script>
 
 </body>
