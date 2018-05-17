@@ -43,7 +43,7 @@ class Post_model extends CI_Model {
 
 
     public function get_all_post_by_paging($limit = NULL, $start = NULL) {
-        $this->db->select('post.* , post_en.title as title_en , post_en.content as content_en');
+        $this->db->select('post.* , post_en.title as title_en , post_en.content as content_en , post_en.menu as menu_en');
         $this->db->from('post');
         $this->db->join('post_en','post_en.post_id = post.id','left');
         $this->db->where('post.is_delete', 0);
@@ -61,7 +61,7 @@ class Post_model extends CI_Model {
         return $this->db->get()->row_array();
     }
     public function get_all_post_by_id($id) {
-        $this->db->select('post.* , post_en.title as title_en , post_en.content as content_en');
+        $this->db->select('post.* , post_en.title as title_en , post_en.content as content_en , post_en.menu as menu_en');
         $this->db->from('post');
         $this->db->join('post_en','post_en.post_id = post.id','left');
         $this->db->where('post.is_delete', 0);

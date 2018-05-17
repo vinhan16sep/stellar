@@ -1,3 +1,3 @@
-<div class="content-wrapper">Dashboard</div>
+<div class="content-wrapper"></div>
 
 <?php echo $this->session->flashdata('success'); ?>

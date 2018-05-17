@@ -542,11 +542,10 @@ ul.nav .sub_nav > ul{
 	margin:20px 0;
 	font-weight:bold;
 }
-
 .paragraph{
 	color:#fff;
 	text-align:justify;
-}
+} 
 
 #register table{
 	width:100%;
@@ -772,4 +771,11 @@ textarea{
 	border:2px solid #fff;
 	color:#fff;
 	border-radius:10px;
+}
+
+
+
+.text.fadeinUp.paragraph p{
+	color:#fff;
+	text-align:justify;
 }

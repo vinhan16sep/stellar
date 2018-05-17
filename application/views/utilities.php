@@ -3,7 +3,7 @@
         <!-- InstanceBeginEditable name="content" -->
         <div class="content_left col-md-4 col-sm-4 col-xs-12">
             <h4 class="title"><?php echo $Post['title']; ?></h4>
-            <div class="text fadeinUp">
+            <div class="text fadeinUp paragraph">
                 <p class="paragraph"><?php echo $Post['content']; ?></p>
             </div>
         </div>

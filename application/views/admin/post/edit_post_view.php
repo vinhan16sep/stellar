@@ -11,6 +11,13 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <?php
+                        echo form_label('Menu', 'post_link');
+                        echo form_error('menu');
+                        echo form_input('menu', set_value('menu',$Post['menu']), 'class="form-control" readonly');
+                        ?>
+                    </div>
+                    <div class="form-group">
+                        <?php
                         echo form_label('Title', 'post_link');
                         echo form_error('title');
                         echo form_input('title', set_value('title',$Post['title']), 'class="form-control"');
@@ -20,11 +27,18 @@
                         <?php
                         echo form_label('content', 'post_content');
                         echo form_error('content');
-                        echo form_textarea('content', set_value('content',$Post['content']), 'class="tinymce-area form-control"');
+                        echo form_textarea('content', set_value('content',$Post['content'], false), 'class="tinymce-area form-control"');
                         ?>
                     </div>
                 </div>
                 <div class="col-sm-6" style="margin-bottom: 20px;">
+                    <div class="form-group">
+                        <?php
+                        echo form_label('Menu_en', 'post_link');
+                        echo form_error('menu');
+                        echo form_input('menu_en', set_value('menu_en',$Post['menu_en']), 'class="form-control" readonly');
+                        ?>
+                    </div>
                     <div class="form-group">
                         <?php
                         echo form_label('Title_en', 'post_link');
@@ -36,7 +50,7 @@
                         <?php
                         echo form_label('content_en', 'post_content');
                         echo form_error('content');
-                        echo form_textarea('content_en', set_value('content_en',$Post['content_en']), 'class="tinymce-area form-control"');
+                        echo form_textarea('content_en', set_value('content_en',$Post['content_en'], false), 'class="tinymce-area form-control"');
                         ?>
                     </div>
                 </div>
