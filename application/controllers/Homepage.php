@@ -11,6 +11,7 @@ class Homepage extends Public_Controller {
 		$this->load->helper('url');
 		$this->load->model('homepage_model');
 		$this->load->model('references_model');
+		$this->load->model('post_model');
 		$this->load->helper('form');
 		$this->data['lang'] = $this->session->userdata('langAbbreviation');
 	}
@@ -18,6 +19,7 @@ class Homepage extends Public_Controller {
 	public function index() {
 		$this->data['references'] = $this->references_model->fetch_all(); 
 		$this->data['location'] = 'homepage';
+		$this->data['Post'] = ($this->lang->line('detector') == "en")? $this->post_model->get_post_en_by_post_id(1) : $this->post_model->get_all_post_by_id(1);
 		$this->render('homepage_view');
 	}
 

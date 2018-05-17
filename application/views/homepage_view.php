@@ -6,8 +6,8 @@
                 <img src="<?php echo site_url('assets/public/img/nc_003.jpg')?>"
             </div>
             <div class="homepage_intro fadeinUp">
-                <h4 class="title"><?php echo $this->lang->line('Introduce'); ?></h4>
-                <p class="paragraph"><?php echo $this->lang->line('Introduce_content'); ?></p>
+                <h4 class="title"><?php echo $Post['title']; ?></h4>
+                <p class="paragraph"><?php echo $Post['content']; ?></p>
             </div>
         </div>
     </div>

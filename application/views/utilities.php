@@ -2,14 +2,9 @@
     <div class="container-fluid">
         <!-- InstanceBeginEditable name="content" -->
         <div class="content_left col-md-4 col-sm-4 col-xs-12">
-            <h4 class="title"><?php echo $this->lang->line('utilities_title'); ?></h4>
-            <div class="text fadeinUp">
-                <p class="paragraph"><?php echo $this->lang->line('utilities_1'); ?></p>
-                <p class="paragraph"><?php echo $this->lang->line('utilities_2'); ?></p>
-                <p class="paragraph"><?php echo $this->lang->line('utilities_3'); ?></p>
-                <p class="paragraph"><?php echo $this->lang->line('utilities_4'); ?></p>
-                <p class="paragraph"><?php echo $this->lang->line('utilities_5'); ?></p>
-                <p class="paragraph"><?php echo $this->lang->line('utilities_6'); ?></p>
+            <h4 class="title"><?php echo $Post['title']; ?></h4>
+            <div class="text fadeinUp paragraph">
+                <p class="paragraph"><?php echo $Post['content']; ?></p>
             </div>
         </div>
         <div class="content_right col-md-8 col-sm-8 col-xs-12">
