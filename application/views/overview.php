@@ -4,12 +4,12 @@
         <div class="content_left col-md-4 col-sm-4 col-xs-12">
             <h4 class="title"><?php echo $Post['title']; ?></h4>
             <div class="text fadeinUp">
-                <p class="paragraph"><?php echo $Post['content']; ?></p>
+                <div class="paragraph"><?php echo $Post['content']; ?></div>
             </div>
         </div>
         <div class="content_right col-md-8 col-sm-8 col-xs-12">
             <div class="mask">
-                <img src="<?php echo site_url('assets/public/img/nc_001.jpg')?>"
+                <img src="<?php echo site_url('assets/upload/post/').$Post['image'];?>"/>
             </div>
         </div>
         <!-- InstanceEndEditable -->

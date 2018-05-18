@@ -68,7 +68,7 @@
     </div>
     <div class="content_right col-md-8 col-sm-8 col-xs-12">
         <div class="mask">
-            <img src="<?php echo site_url('assets/public/img/nc_001.jpg')?>"
+            <img src="<?php echo site_url('assets/upload/post/').$Post['image'];?>"/>
         </div>
     </div>
 <!-- InstanceEndEditable -->

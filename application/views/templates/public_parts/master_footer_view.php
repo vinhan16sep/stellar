@@ -82,20 +82,20 @@
                     </th>
                     <th>
                         <label class="checkbox-inline">
-                            <input type="radio" id="select_b" name="acreage" value="92,2m2 2 phòng ngủ)">
-                            92,2m2 <br> (2 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom'); ?>)
+                            <input type="radio" id="select_b" name="acreage" value="92,2m2 (2 phòng ngủ + 1 phòng đa năng)">
+                            92,2m2 <br> (2 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom');?> + 1 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Multipurpose_room'); ?>)
                         </label>
                     </th>
                     <th>
                         <label class="checkbox-inline">
-                            <input type="radio" id="select_c" name="acreage" value=" 94,1m2 (2 phòng ngủ)">
-                            94,1m2 <br> (2 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom'); ?>)
+                            <input type="radio" id="select_c" name="acreage" value=" 94,1m2 (2 phòng ngủ + 1 phòng đa năng)">
+                            94,1m2 <br> (2 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom');?> + 1 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Multipurpose_room'); ?>)
                         </label>
                     </th>
                     <th>
                         <label class="checkbox-inline">
-                            <input type="radio" id="select_d" name="acreage" value=" 151,5m2 (3 phòng ngủ)">
-                            151,5m2 <br> (3 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom'); ?>)
+                            <input type="radio" id="select_d" name="acreage" value=" 151,5m2 (3 - 5 phòng ngủ)">
+                            151,5m2 <br> (3 - 5 <?php echo $this->lang->line('CUSTOMER_INFORMATION_Bedroom'); ?>)
                         </label>
                     </th>
                 </tr>
@@ -160,6 +160,7 @@
 <!-- InstanceEnd --></html>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="<?php echo site_url('assets/public/lightbox-plus-jquery.min.js'); ?>"></script>
 <script src="<?php echo site_url('assets/public/bootstrap-3.3.4-dist/js/bootstrap.js'); ?>"></script>
 <script src="<?php echo site_url('assets/public/responsive_nav.js'); ?>"></script>
 <script src="<?php echo site_url('assets/public/script.js'); ?>"></script>
@@ -175,8 +176,6 @@
         $('.paragraph-'+id).removeClass('hide');
         $('.paragraph-'+id).addClass('show');
     });
-
-
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

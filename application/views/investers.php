@@ -4,7 +4,7 @@
         <div class="col-md-4 col-sm-4 col-xs-12 content_left">
             <h4 class="title"><?php echo $Post['title']; ?></h4>
             <div class="text fadeinUp">
-              <p class="paragraph"><?php echo $Post['content']; ?></p>
+              <div class="paragraph"><?php echo $Post['content']; ?></div>
           </div>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-12 content_right">

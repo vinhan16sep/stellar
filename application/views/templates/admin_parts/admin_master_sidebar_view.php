@@ -35,19 +35,29 @@ if($this->ion_auth->logged_in()) {
                 </li>
                 <li>
                     <a href="<?php echo site_url('admin/post'); ?>">
-                        <i class="fa fa-inbox"></i> <span>Bài Viết</span>
+                        <i class="fa fa-inbox"></i> <span>Post</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo site_url('admin/product'); ?>">
+                        <i class="fa fa-inbox"></i> <span>Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo site_url('admin/product_category'); ?>">
+                        <i class="fa fa-inbox"></i> <span>Product Category</span>
                     </a>
                 </li>
                 <li class="header">DOCUMENTATION</li>
                 <li>
                     <a href="<?php echo base_url('admin/user/change_password') ?>">
-                        <i class="fa fa-refresh" aria-hidden="true"></i> <span>Đổi Mật Khẩu</span>
+                        <i class="fa fa-refresh" aria-hidden="true"></i> <span>Change Password</span>
                     </a>
                 </li>
                 <?php if ($this->ion_auth->is_admin()===TRUE): ?>
                     <li>
                         <a href="<?php echo base_url('admin/user/register') ?>">
-                            <i class="fa fa-registered" aria-hidden="true"></i> <span>Tạo tài khoản</span>
+                            <i class="fa fa-registered" aria-hidden="true"></i> <span>Register</span>
                         </a>
                     </li>
                 <?php endif ?>

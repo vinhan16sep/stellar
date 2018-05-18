@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <!-- InstanceBeginEditable name="content" -->
       <div class="col-md-4 col-sm-4 col-xs-12 content_left download">
-          <h4 class="title highlight"><?php echo $Post['title']; ?></h4>
+          <h4 class="title highlight"><?php  echo $this->lang->line("download_title"); ?></h4>
           <div class="text fadeinUp">
             <p class="paragraph">Brochure</p>
                 <table>
@@ -15,7 +15,7 @@
                 <table>
                     <tr>
                         <th><img src="<?php echo site_url('assets/public/img/icon2.png'); ?>" alt=""></th>
-                          <th><a target="_blank" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_vid"><?php echo $Post['content']; ?></a></th>
+                          <th><a target="_blank" class="btn btn-default hvr-shutter-out-horizontal" type="submit" id="play_vid"></a></th>
                       </tr>
                   </table>     -->
         </div>
@@ -25,10 +25,16 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="<?php echo site_url('assets/public/img/b_001.jpg'); ?>" alt="...">
+                <a class="example-image-link" href="<?php echo site_url('assets/public/img/brochure-01.jpg'); ?>" data-lightbox="proture" data-title="Click the right half of the image to move forward."><img class="example-image" src="<?php echo site_url('assets/public/img/brochure-01.jpg'); ?>" alt=""/></a>
               </div>
               <div class="item">
-                <img src="<?php echo site_url('assets/public/img/b_002.jpg'); ?>" alt="...">
+                <a class="example-image-link" href="<?php echo site_url('assets/public/img/brochure-02.jpg'); ?>" data-lightbox="proture" data-title="Click the right half of the image to move forward."><img class="example-image" src="<?php echo site_url('assets/public/img/brochure-02.jpg'); ?>" alt=""/></a>
+              </div>
+              <div class="item">
+                <a class="example-image-link" href="<?php echo site_url('assets/public/img/brochure-03.jpg'); ?>" data-lightbox="proture" data-title="Click the right half of the image to move forward."><img class="example-image" src="<?php echo site_url('assets/public/img/brochure-03.jpg'); ?>" alt=""/></a>
+              </div>
+              <div class="item">
+                <a class="example-image-link" href="<?php echo site_url('assets/public/img/brochure-04.jpg'); ?>" data-lightbox="proture" data-title="Click the right half of the image to move forward."><img class="example-image" src="<?php echo site_url('assets/public/img/brochure-04.jpg'); ?>" alt=""/></a>
               </div>
             </div>
 

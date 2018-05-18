@@ -92,3 +92,4 @@ $lang['bank_6_1'] = 'Exclusive marketing and sales unit';
 //download
 $lang['download_title'] = 'Download publications';
 $lang['download_view_online'] = 'View online';
+$lang['FREQUENTLY_ASK_QUESTIONS'] = 'FREQUENTLY ASK QUESTIONS';

@@ -25,6 +25,8 @@ $action = isset($action[0]) ? $action[0] : '';
     <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css'); ?>">    
     <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/css/hover.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets/public/lightbox.min.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo site_url('assets/public/fancybox/jquery.fancybox.min.css'); ?>" />
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Maitree:600" rel="stylesheet">
 
 <body>
@@ -41,9 +43,9 @@ $action = isset($action[0]) ? $action[0] : '';
                 <div class="right col-md-6 col-sm-6 col-xs-12">
                     <div class="language">
                         <ul>
-                            <li><a href="<?php echo site_url('/vi'); ?>">Tiếng Việt</a></li>
+                            <li><a href="<?php echo site_url('/vi'); ?>">VI</a></li>
                             <li>|</li>
-                            <li><a href="<?php echo site_url('/en'); ?>">English</a></li>
+                            <li><a href="<?php echo site_url('/en'); ?>">EN</a></li>
                         </ul>
                     </div>
                     <div class="register">

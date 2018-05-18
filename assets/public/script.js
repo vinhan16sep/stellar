@@ -15,30 +15,6 @@ $(function(){
 	});
 	
 	$('.resident .slide').hide();
-	$('.resident #room_a').click(function(){
-		$('#re_a').fadeIn();
-		$('.resident .room').hide();
-		$('.resident #re_b, .resident #re_c, .resident #re_d').hide();
-	});
-	$('.resident #room_b').click(function(){
-		$('#re_b').fadeIn();
-		$('.resident .room').hide();
-		$('.resident #re_a, .resident #re_c, .resident #re_d').hide();
-	});
-	$('.resident #room_c').click(function(){
-		$('#re_c').fadeIn();
-		$('.resident .room').hide();
-		$('.resident #re_a, .resident #re_b, .resident #re_d').hide();
-	});
-	$('.resident #room_d').click(function(){
-		$('#re_d').fadeIn();
-		$('.resident .room').hide();
-		$('.resident #re_a, .resident #re_b, .resident #re_c').hide();
-	});
-	$('.slide .close').click(function(){
-		$('.resident .slide').fadeOut();
-		$('.resident .room').fadeIn();
-	});
 	
 	
 	$('#re_a, #re_b, #re_c, #re_d').carousel({

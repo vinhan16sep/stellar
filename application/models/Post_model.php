@@ -77,9 +77,10 @@ class Post_model extends CI_Model {
     }
 
     public function get_post_en_by_post_id($id) {
-        $this->db->select('*');
+        $this->db->select('post_en.title,post_en.content,post.image as image');
         $this->db->from('post_en');
-        $this->db->where('is_delete', 0);
+        $this->db->join('post','post.id = post_id','left');
+        $this->db->where('post.is_delete', 0);
         $this->db->where('post_id', $id);
         $this->db->limit(1);
 
