@@ -52,7 +52,6 @@ $lang['CUSTOMER_INFORMATION_Workplace'] = 'Nơi công tác';
 $lang['CUSTOMER_INFORMATION_grade'] = 'Chức vụ';
 $lang['CUSTOMER_INFORMATION_address'] = 'Địa chỉ liên hệ';
 $lang['CUSTOMER_INFORMATION_phone'] = 'Điện thoại liên hệ';
-$lang['CUSTOMER_INFORMATION_email'] = 'Email';
 $lang['CUSTOMER_INFORMATION_fax'] = 'Fax';
 $lang['CUSTOMER_INFORMATION_CONCERN'] = 'THÔNG TIN KHÁCH HÀNG QUAN TÂM';
 $lang['CUSTOMER_INFORMATION_Acreage'] = 'Diện tích';

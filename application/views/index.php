@@ -21,9 +21,9 @@
         <div class="right">
             <div class="language">
                 <ul>
-                    <li><a href="<?php echo site_url('/vi') ?>">Tiếng Việt</a></li>
+                    <li><a href="<?php echo site_url('/vi') ?>">VI</a></li>
                     <li>|</li>
-                    <li><a href="<?php echo site_url('/en') ?>">English</a></li>
+                    <li><a href="<?php echo site_url('/en') ?>">EN</a></li>
                 </ul>
             </div>
         </div>        

@@ -1,6 +1,6 @@
         <div class="container_foot container-fluid">
                 <div class="left col-md-3 col-sm-6 col-xs-12">
-                    <h4>Hotline : <span class="tel highlight">(84-4) 668.00.886</span></h4>
+                    <h4><?php echo ($this->lang->line('detector') == 'vi')? 'Liên hệ' : 'Hotline'; ?> : <span class="tel highlight">(84-4) 668.00.886</span></h4>
                     <span><?php echo $this->lang->line('Sales_office_and_project_address'); ?>
                         <br>
                         <?php echo $this->lang->line('footer_address'); ?></span>
@@ -21,7 +21,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="registerLabel">Thông tin đăng ký</h4>
+        <h4 class="modal-title" id="registerLabel"><?php echo ($this->lang->line('detector') == 'vi')? 'Thông tin đăng ký' : 'Registration information'; ?>
+ </h4>
       </div>
       <div class="modal-body">
           <?php echo form_open("/homepage/register", array('method'=>'post','class' => 'form-horizontal','id'=>'register-from')); ?>
@@ -32,7 +33,7 @@
             <tr>
                 <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_name'); ?></th>
                 <th>&nbsp;</th>
-                <th><input type="text" class="form-control" id="InputName" name="name" placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_name'); ?> (* bắt buộc)"></th>
+                <th><input type="text" class="form-control" id="InputName" name="name" placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_name'); ?> (* <?php echo ($this->lang->line('detector') == 'vi')? 'bắt buộc' : 'obligatory'; ?>)"></th>
             </tr>
             <!--
 			<tr>
@@ -54,12 +55,12 @@
             <tr>
                 <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_phone'); ?></th>
                 <th>&nbsp;</th>
-                <th><input type="number" class="form-control" id="InputTel"  name="tel"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_phone'); ?> (* bắt buộc)"></th>
+                <th><input type="number" class="form-control" id="InputTel"  name="tel"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_phone'); ?> (* <?php echo ($this->lang->line('detector') == 'vi')? 'bắt buộc' : 'obligatory'; ?>)"></th>
             </tr>
             <tr>
-                <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_email'); ?></th>
+                <th>Email</th>
                 <th>&nbsp;</th>
-                <th><input type="text" class="form-control" id="InputMail"  name="mail"  placeholder="<?php echo $this->lang->line('CUSTOMER_INFORMATION_email'); ?>"></th>
+                <th><input type="text" class="form-control" id="InputMail"  name="mail"  placeholder="Email"></th>
             </tr>
             <!--<tr>
                 <th><?php echo $this->lang->line('CUSTOMER_INFORMATION_Fax'); ?></th>

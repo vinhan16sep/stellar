@@ -224,12 +224,12 @@ ul.nav > li:hover > a{
 }
 
 ul.nav > li > ul{
-	width: 300px;
+	width: 200px;
 	padding: 10px 15px;
 	background:#493f26;
 }
 
-@media (max-width: 768px){
+@media (max-width: 992px){
 	ul.nav > li > ul{
 		width: 100%;
 	}
