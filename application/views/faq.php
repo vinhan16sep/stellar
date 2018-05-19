@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <!-- InstanceBeginEditable name="content" -->
     <div class="col-md-4 col-sm-4 col-xs-12 content_left progress_part">
-        <h4 class="title">Câu hỏi thường gặp</h4>
+        <h4 class="title"><?php echo $this->lang->line('FREQUENTLY_ASK_QUESTIONS'); ?></h4>
         <div class="text fadeinUp">
             <div class="text process-content">
                 <?php

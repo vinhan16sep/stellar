@@ -20,8 +20,8 @@
                 <td><b><a href="#">Action</a></b></td>
                 </tr>
                 <?php
-                if (!empty($Post)) {
-                    foreach ($Post as $key => $item):
+                if (!empty($product_category)) {
+                    foreach ($product_category as $key => $item):
                         echo '<tr>';
                         echo '<td>' . ($key+1) . '</td>';
                         echo '<td>' . $item['menu'] . '</td>';
@@ -30,13 +30,13 @@
                         echo '<td>' . $item['menu_en'] . '</td>';
                         echo '<td>' . $item['title_en'] . '</td>';
                         echo '<td class="description-content">' . $item['content_en'] . '</td>';
-                        if(!empty($item['image'])){
-                        echo '<td><img src = "'.base_url('assets/upload/').$controller.'/'.$item['image'].'" width="150px" /></td>';
+                        if(empty($item['avata'])){
+                            $image = json_decode($item['image']);
+                            echo '<td><img src = "'.base_url('assets/upload/').$controller.'/'.$image[0].'" width="150px" /></td>';
+                        }else{
+                            echo '<td><img src = "'.base_url('assets/upload/').$controller.'/'.$item['avata'].'" width="150px" /></td>';
                         }
-                        else{
-                            echo '<td>Chưa có ảnh.</td>';
-                        }
-                        echo  '<td>' .'<a class="btn btn-primary" href="'.site_url('admin/post/edit/'.$item['id']).'"> Edit </a>'. '</td>';
+                        echo  '<td>' .'<a class="btn btn-primary" href="'.site_url('admin/'.$controller.'/edit/'.$item['id']).'"> Edit </a>'. '</td>';
                         echo '</tr>';
                     endforeach;
                 }else {

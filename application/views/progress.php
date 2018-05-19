@@ -9,7 +9,7 @@
                     if($row['id'] && $row['id'] == $id){
             ?>
                 <h4 class=" title  paragraph-title  show paragraph-<?php echo $row['id']; ?>"><?php echo $row['title']; ?></h4>
-                <p id="paragraph-<?php echo $row['id']; ?>" class="paragraph show"><?php echo $row['content']; ?></p>
+                <div id="paragraph-<?php echo $row['id']; ?>" class="paragraph show"><?php echo $row['content']; ?></div>
             <?php
                     }
                 }

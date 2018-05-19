@@ -2,7 +2,7 @@ $(document).ready(function() {
     "use strict";
 
     var n = $(window).width();
-    if (n <= 970){
+    if (n <= 768){
         $('ul.nav').hide();
     }
 

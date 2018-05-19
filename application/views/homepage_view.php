@@ -3,14 +3,13 @@
     <!-- InstanceBeginEditable name="content" -->
         <div class="content">
             <div class="mask">
-                <img src="<?php echo site_url('assets/public/img/nc_003.jpg')?>"
+                <img src="<?php echo site_url('assets/upload/post/').$Post['image'];?>"/>
             </div>
             <div class="homepage_intro fadeinUp">
                 <h4 class="title"><?php echo $Post['title']; ?></h4>
-                <p class="paragraph"><?php echo $Post['content']; ?></p>
+                <div class="paragraph"><?php echo $Post['content']; ?></div>
             </div>
         </div>
     </div>
     <!-- InstanceEndEditable -->
-    </div>
 </div>

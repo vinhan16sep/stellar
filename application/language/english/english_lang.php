@@ -52,11 +52,11 @@ $lang['CUSTOMER_INFORMATION_Workplace'] = 'Work place';
 $lang['CUSTOMER_INFORMATION_grade'] = 'Position';
 $lang['CUSTOMER_INFORMATION_address'] = 'address';
 $lang['CUSTOMER_INFORMATION_phone'] = 'Contact phone';
-$lang['CUSTOMER_INFORMATION_email'] = 'Email';
 $lang['CUSTOMER_INFORMATION_fax'] = 'Fax';
 $lang['CUSTOMER_INFORMATION_CONCERN'] = 'CUSTOMER INFORMATION CONCERN';
 $lang['CUSTOMER_INFORMATION_Acreage'] = 'Acreage';
 $lang['CUSTOMER_INFORMATION_Bedroom'] = 'Bedroom';
+$lang['CUSTOMER_INFORMATION_Multipurpose_room'] = 'Multipurpose room';
 $lang['CUSTOMER_INFORMATION_Know_STELLAR'] = 'YOU KNOW THE STELLAR Garden PROJECT:';
 $lang['CUSTOMER_INFORMATION_Know_pape'] = 'Advertising in the press';
 $lang['CUSTOMER_INFORMATION_Know_qc'] = 'Outdoor billboard';
@@ -92,3 +92,4 @@ $lang['bank_6_1'] = 'Exclusive marketing and sales unit';
 //download
 $lang['download_title'] = 'Download publications';
 $lang['download_view_online'] = 'View online';
+$lang['FREQUENTLY_ASK_QUESTIONS'] = 'FREQUENTLY ASK QUESTIONS';

@@ -52,11 +52,11 @@ $lang['CUSTOMER_INFORMATION_Workplace'] = 'Nơi công tác';
 $lang['CUSTOMER_INFORMATION_grade'] = 'Chức vụ';
 $lang['CUSTOMER_INFORMATION_address'] = 'Địa chỉ liên hệ';
 $lang['CUSTOMER_INFORMATION_phone'] = 'Điện thoại liên hệ';
-$lang['CUSTOMER_INFORMATION_email'] = 'Email';
 $lang['CUSTOMER_INFORMATION_fax'] = 'Fax';
 $lang['CUSTOMER_INFORMATION_CONCERN'] = 'THÔNG TIN KHÁCH HÀNG QUAN TÂM';
 $lang['CUSTOMER_INFORMATION_Acreage'] = 'Diện tích';
 $lang['CUSTOMER_INFORMATION_Bedroom'] = 'phòng ngủ';
+$lang['CUSTOMER_INFORMATION_Multipurpose_room'] = 'phòng đa năng';
 $lang['CUSTOMER_INFORMATION_Know_STELLAR'] = 'QUÝ KHÁCH BIẾT TỚI DỰ ÁN Stellar Garden THÔNG QUA:';
 $lang['CUSTOMER_INFORMATION_Know_pape'] = 'Quảng cáo trên báo chí';
 $lang['CUSTOMER_INFORMATION_Know_qc'] = 'Biển quảng cáo ngoài trời';
@@ -93,3 +93,4 @@ $lang['bank_6_1'] = 'Đơn vị tiếp thị và bán hàng độc quyền';
 //download
 $lang['download_title'] = 'Tải về ấn phẩm đầy đủ';
 $lang['download_view_online'] = 'Xem online';
+$lang['FREQUENTLY_ASK_QUESTIONS'] = 'CÂU HỎI THƯỜNG GẶP';

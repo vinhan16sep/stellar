@@ -11,13 +11,13 @@ class utilities extends Public_Controller {
 		$this->load->helper('url');
 		$this->load->model('homepage_model');
 		$this->load->model('references_model');
-		$this->load->model('post_model');
+		$this->load->model('product_category_model');
 		$this->load->helper('form');
         $this->data['lang'] = $this->session->userdata('langAbbreviation');
 	}
     
 	public function index() {
-		$this->data['Post'] = ($this->lang->line('detector') == "en")? $this->post_model->get_post_en_by_post_id(6) : $this->post_model->get_all_post_by_id(6);
+		$this->data['Product_category'] = ($this->lang->line('detector') == "en")? $this->product_category_model->get_product_category_en_by_product_category_id(3) : $this->product_category_model->get_all_product_category_by_id(3);
 		$this->render('utilities');
 	}
 	
