@@ -1,3 +1,6 @@
+* {
+  -webkit-overflow-scrolling: touch; 
+}
 body{
 	background: #362825;
 	font-family:"webFont";
@@ -167,7 +170,7 @@ ul.nav > li{
 }
 
 ul.nav > li > a{
-	padding: 10px 5px;
+	padding: 10px 4px;
 	font-size: 1.13em;
 }
 
@@ -778,7 +781,7 @@ textarea{
 }
 
 .highlight{
-    padding:5px 10px;
+    padding:5px 2px;
     background: rgba(199,165,103,1);
 	background: -moz-linear-gradient(-45deg, rgba(199,165,103,1) 0%, rgba(151,124,81,1) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(199,165,103,1)), color-stop(100%, rgba(151,124,81,1)));
