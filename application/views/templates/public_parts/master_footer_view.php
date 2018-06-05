@@ -1,6 +1,6 @@
         <div class="container_foot container-fluid">
                 <div class="left col-md-3 col-sm-6 col-xs-12">
-                    <h4><?php echo ($this->lang->line('detector') == 'vi')? 'Liên hệ' : 'Hotline'; ?> : <span class="tel highlight">(84-4) 668.00.886</span></h4>
+                    <h4><?php echo ($this->lang->line('detector') == 'vi')? 'Liên hệ' : 'Hotline'; ?> : <span class="tel highlight">(84-24) 668.00.886</span></h4>
                     <span><?php echo $this->lang->line('Sales_office_and_project_address'); ?>
                         <br>
                         <?php echo $this->lang->line('footer_address'); ?></span>
@@ -179,6 +179,15 @@
     });
 </script>
 <script>
+
+    lightbox.option({
+        'disableScrolling':true
+    })
+    $("img.example-image").click(function(){
+    });
+
+</script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -189,3 +198,29 @@
 
 </script>
 </html>
+
+<script>
+    $("#lb-zoomController a.lb-zoom.minus").mousemove(function(){});
+    $("#lb-zoomController a.lb-zoom.plus").click(function(){
+        $("a.example-image-link img").css('opacity','0');
+        $("a.example-image-link").on("mousemove", function(event) {
+            zoom(event)
+        })
+        $("a.example-image-link").on("touchmove", function(event) {
+            zoom(event)
+        })
+    });
+    $("#lb-zoomController a.lb-zoom.minus").click(function(){
+        alert(1);
+        $("a.example-image-link img").css('opacity','1');
+        $(".lb-container").css("background","url(http://localhost/stellar/assets/upload/product/ad206745d84015f72877c3fb9013d497.jpg)");
+    });
+      function zoom(e) {
+        var zoomer = e.currentTarget;
+        e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+        e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+        x = (offsetX / zoomer.offsetWidth) * 100
+        y = (offsetY / zoomer.offsetHeight) * 100
+        zoomer.style.backgroundPosition = x + "% " + y + "%";
+      }
+</script>

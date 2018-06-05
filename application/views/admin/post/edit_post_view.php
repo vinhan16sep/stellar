@@ -9,7 +9,21 @@
                 echo form_open_multipart('', array('class' => 'form-horizontal'));
                 ?>
                 <p>Hình ảnh đang sử dụng</p>
-                <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$Post['image']; ?>" width="150px" /></td>';
+                <?php if (!empty($Post['image'])): ?>
+                    <?php $image = json_decode($Post['image']); ?>
+                        <?php foreach ($image as $key => $value): ?>
+                            <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$value; ?>" width="150px" />
+                    <?php endforeach ?>
+                <?php endif ?>
+                    <div class="form-group">
+                        <?php
+                        echo form_label('Ảnh Slide', 'image_slide');
+                        echo form_error('image_slide');
+                        echo form_upload('image_slide[]', set_value('image_slide'), 'class="form-control" multiple');
+                        ?>
+                        <br>
+                    </div>
+                <!-- <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$Post['image']; ?>" width="150px" /></td>';
                 <div class="form-group">
                     <?php
                     echo form_label('Ảnh đại diện', 'image_shared');
@@ -17,7 +31,7 @@
                     echo form_upload('image_shared', set_value('image_shared'), 'class="form-control"');
                     ?>
                     <br>
-                </div>
+                </div> -->
                 <div class="col-sm-6">
                     <div class="form-group">
                         <?php

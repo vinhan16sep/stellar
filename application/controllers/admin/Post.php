@@ -54,14 +54,23 @@ class Post extends Admin_Controller {
                     'title' => $this->input->post('title_en'),
                     'content' => $this->input->post('content_en')
                 );
-                if(!empty($_FILES['image_shared']['name'])){
+                /*if(!empty($_FILES['image_shared']['name'])){
                     $this->check_img($_FILES['image_shared']['name'], $_FILES['image_shared']['size']);
                 }
                 if(!empty($_FILES['image_shared']['name'])){
                     $image = $this->upload_image('image_shared', $_FILES['image_shared']['name'], 'assets/upload/'.$this->data['controller'], 'assets/upload/'.$this->data['controller'].'/thumb');
+                }*/
+                if(!empty($_FILES['image_slide']['name'])){
+                    $image_slide = $this->upload_file('./assets/upload/'.$this->data['controller'], 'image_slide', 'assets/upload/'.$this->data['controller'].'/thumb');
+                    if(count($image_slide) > 0){
+                        $this->check_img_slide($_FILES['image_slide']['name'], $_FILES['image_slide']['size']);
+                        foreach ($image_slide as $key => $value) {
+                            $image_array[] = $value;
+                        }
+                    } 
                 }
-                if(isset($image)){
-                    $post_data['image'] = $image;
+                if(isset($image_array)){
+                    $post_data['image'] = json_encode($image_array);
                 }
                 try {
                     $this->post_model->update_post($id,$post_data);
@@ -72,7 +81,7 @@ class Post extends Admin_Controller {
                         $post_data_en['post_id'] = $id;
                         $this->post_model->insert_post_en($post_data_en);
                     }
-                    if(isset($image) && !empty($this->data['Post']['image'])){
+                    if(isset($image_array) && !empty($this->data['Post']['image'])){
                         if(file_exists('assets/upload/'. $this->data['controller'] .'/'.$this->data['Post']['image']))
                         unlink('assets/upload/'. $this->data['controller'] .'/'.$this->data['Post']['image']);
                     }
@@ -97,6 +106,33 @@ class Post extends Admin_Controller {
             redirect('admin/'.$this->data['controller']);
         }
         if ($filesize > 1228800) {
+            $this->session->set_flashdata('message_error', sprintf(MESSAGE_PHOTOS_ERROR, 1200));
+            redirect('admin/'.$this->data['controller']);
+        }
+    }
+    protected function check_img_slide($filename, $filesize){
+        // print_r($filesize);die;
+        $images = array('jpg', 'jpeg', 'png', 'gif');
+        foreach ($filename as $key => $value) {
+            $map[] = explode('.',$value);
+        }
+        foreach ($map as $key => $value) {
+            $new_map[] = $value[1];
+        }
+        if(array_diff($new_map, $images) != null){
+            $this->session->set_flashdata('message_error', MESSAGE_FILE_EXTENSION_ERROR);
+            redirect('admin/'.$this->data['controller']);
+        }
+        $image_size = array('success');
+
+        foreach ($filesize as $key => $value) {
+            if ($value > 1228800) {
+                $check_size[] = 'error';
+            }else{
+                $check_size[] = 'success';
+            }
+        }
+        if (array_diff($check_size, $image_size) != null) {
             $this->session->set_flashdata('message_error', sprintf(MESSAGE_PHOTOS_ERROR, 1200));
             redirect('admin/'.$this->data['controller']);
         }
