@@ -39,7 +39,7 @@
 
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<img src="<?php echo site_url('assets/upload/product_category/').$Product_category['avata']; ?>" alt="">
+						<img src="<?php echo site_url('assets/upload/product_category/').$Product_category['avata']; ?>" style="width: 98%;" alt="">
 					</div>
 
 				</div>

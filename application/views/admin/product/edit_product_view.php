@@ -12,12 +12,6 @@
                 <?php if (!empty($product['avata'])): ?>
                         <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$product['avata']; ?>" width="150px" /></td>';
                 <?php endif ?>
-                <?php if (!empty($product['image'])): ?>
-                    <?php $image = json_decode($product['image']); ?>
-                        <?php foreach ($image as $key => $value): ?>
-                            <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$value; ?>" width="150px" />
-                    <?php endforeach ?>
-                <?php endif ?>
                     <div class="form-group">
                         <?php
                         echo form_label('Ảnh đại diện', 'image_shared');
@@ -26,6 +20,12 @@
                         ?>
                         <br>
                     </div>
+                <?php if (!empty($product['image'])): ?>
+                    <?php $image = json_decode($product['image']); ?>
+                        <?php foreach ($image as $key => $value): ?>
+                            <img src = "<?php echo base_url('assets/upload/').$controller.'/'.$value; ?>" width="150px" />
+                    <?php endforeach ?>
+                <?php endif ?>
                     <div class="form-group">
                         <?php
                         echo form_label('Ảnh Slide', 'image_slide');

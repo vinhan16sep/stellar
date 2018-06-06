@@ -55,7 +55,7 @@
                       }else{
                           echo ' <div class="item">';
                       }
-                      echo '<img src="/assets/upload/process/' . $value["content"] .'" alt="...">';
+                      echo '<img src="'.base_url().'assets/upload/process/' . $value["content"] .'" alt="...">';
                       echo ' </div>';
                   }
               } ?>

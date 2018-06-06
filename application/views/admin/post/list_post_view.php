@@ -31,7 +31,8 @@
                         echo '<td>' . $item['title_en'] . '</td>';
                         echo '<td class="description-content">' . $item['content_en'] . '</td>';
                         if(!empty($item['image'])){
-                        echo '<td><img src = "'.base_url('assets/upload/').$controller.'/'.$item['image'].'" width="150px" /></td>';
+                        $image = json_decode($item['image']);
+                            echo '<td><img src = "'.base_url('assets/upload/').$controller.'/'.$image[0].'" width="150px" /></td>';
                         }
                         else{
                             echo '<td>Chưa có ảnh.</td>';
