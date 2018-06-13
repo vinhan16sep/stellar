@@ -645,6 +645,16 @@ textarea{
 
 
 @media (max-width: 768px) {
+	#lb-zoomController .lb-zoom{
+		display: none;
+	}
+	.container_body{
+		height:100%;
+	}
+	.homepage_intro{
+		top:10px;
+		max-height: 210px;
+	}
     .map_bg img{
         position: fixed;
         width: 90%;
