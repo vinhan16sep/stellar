@@ -27,7 +27,6 @@
                         </a>
                     </div>
                 </div>
-                <img src="<?php echo site_url('assets/upload/post/').$Post['image'];?>"/>
             </div>
             <div class="homepage_intro fadeinUp">
                 <h4 class="title"><?php echo $Post['title']; ?></h4>
